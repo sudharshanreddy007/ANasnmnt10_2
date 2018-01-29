@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sudharshan.user.anasnmnt10_2.MainActivity">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        class="com.sudharshan.user.anasnmnt10_2.Frag1"
+        tools:layout="@layout/frag1">
+    </fragment>
+
+    <FrameLayout
+        android:id="@+id/detailFragment"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/listFragment"
+        android:layout_toRightOf="@+id/listFragment">
+
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>
